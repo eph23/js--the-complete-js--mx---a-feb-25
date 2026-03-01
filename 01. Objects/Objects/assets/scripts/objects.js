@@ -1,7 +1,7 @@
 "use strict";
 
 let person = {
-    name: "Ephraim",
+    "first name": "Ephraim",
     age: 30,
     hobbies: ["Sports", "Coding"],
 
@@ -23,3 +23,14 @@ person.age = 38;
 // Deleting property
 delete person.deleteThis;
 console.log(person);
+
+// Name key
+const nameKey = "first name";
+
+// Accessing property with square bracket
+// console.log(person["first name"]);
+console.log(person[nameKey]);
+
+const movieList = document.getElementById("movie-list");
+movieList.style["background-color"] = "red";
+movieList.style.display = "block";
