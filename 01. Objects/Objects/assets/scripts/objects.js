@@ -1,9 +1,13 @@
 "use strict";
 
+// Dynamic property
+const userChosenKeyName = "level";
+
 let person = {
     "first name": "Ephraim",
     age: 30,
     hobbies: ["Sports", "Coding"],
+    [userChosenKeyName]: "...",
 
     deleteThis: "yes",
 
@@ -40,6 +44,7 @@ movieList.style["background-color"] = "red";
 movieList.style.display = "block";
 
 console.log(person[1.5]);
+console.log(person[userChosenKeyName]);
 
 // Sorted property order
 console.log(person);
